@@ -116,6 +116,7 @@
             btnEntrar.Text = "Entrar";
             btnEntrar.TextAlign = ContentAlignment.BottomCenter;
             btnEntrar.UseVisualStyleBackColor = true;
+            btnEntrar.Click += btnEntrar_Click;
             // 
             // TelaLoginUser
             // 
@@ -127,7 +128,6 @@
             SizeGripStyle = SizeGripStyle.Hide;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
-            
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);

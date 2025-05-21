@@ -37,6 +37,7 @@
             label2 = new Label();
             label1 = new Label();
             btnCadastrar = new Button();
+            lblNomeUsuario = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvTarefas).BeginInit();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -124,21 +125,35 @@
             btnCadastrar.Text = "Cadastrar";
             btnCadastrar.TextAlign = ContentAlignment.BottomCenter;
             btnCadastrar.UseVisualStyleBackColor = true;
+            btnCadastrar.Click += btnCadastrar_Click;
+            // 
+            // lblNomeUsuario
+            // 
+            lblNomeUsuario.AutoSize = true;
+            lblNomeUsuario.Location = new Point(12, 9);
+            lblNomeUsuario.Name = "lblNomeUsuario";
+            lblNomeUsuario.Size = new Size(38, 15);
+            lblNomeUsuario.TabIndex = 3;
+            lblNomeUsuario.Text = "label3";
             // 
             // Tarefas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(661, 352);
+            Controls.Add(lblNomeUsuario);
             Controls.Add(groupBox1);
             Controls.Add(dgvTarefas);
             Name = "Tarefas";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Tarefas";
             FormClosed += Tarefas_FormClosed;
+            
             ((System.ComponentModel.ISupportInitialize)dgvTarefas).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -152,5 +167,6 @@
         private Label label1;
         private Button btnCadastrar;
         private ComboBox cbStatus;
+        private Label lblNomeUsuario;
     }
 }

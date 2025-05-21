@@ -9,7 +9,8 @@ namespace ListaTarefas
 {
     class ConexaoBD
     {
-        private string conexaoBanco = "Server=localhost; Database=teste; Uid=root; Pwd:''; ";
+        private string conexaoBanco = "Server=localhost; Database=teste; Uid=root; Pwd=;";
+
 
         public MySqlConnection Conectar()
         {

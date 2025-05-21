@@ -12,14 +12,21 @@ namespace ListaTarefas
 {
     public partial class Tarefas : Form
     {
-        public Tarefas()
+        private Form telaLogin;
+        public Tarefas(Form telaLogin)
         {
             InitializeComponent();
+             
         }
 
         private void Tarefas_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
